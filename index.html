@@ -10,7 +10,7 @@
   <body>
     <nav>
       <h3>PratikSoar</h3>
-      <ul>
+      <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -18,13 +18,17 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger">
-        <i class="fas fa-bars"></i>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
     
-    <div class="sidebar">
-      <div class="sidebar-menu">
-        <i class="fas fa-times close-btn"></i>
+    <div class="mobile-menu">
+      <div class="mobile-menu-content">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -36,235 +40,272 @@
     </div>
 
     <section id="hero">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h2>I'm Pratik Dahal!</h2>
-          <span>Undergraduate Computer Engineer</span>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>I'm Pratik Dahal!</h1>
+            <span class="hero-subtitle">Undergraduate Computer Engineer</span>
+          </div>
+          <p class="hero-description">
+            Computer Engineering student at IOE Purwanchal Campus, Dharan. Front-end development and Python Enthusiast.
+          </p>
+          <button class="btn-primary">
+            <i class="fas fa-download"></i>
+            Download CV
+          </button>
         </div>
-        <p class="hero-desc">
-          Computer Engineering student at IOE Purwanchal Campus, Dharan. Front-end development and Python Enthusiast.
-        </p>
-        <button class="btn-primary">Download CV</button>
-      </div>
-      <div class="hero-image-container">
-        <img src="kk.png" class="hero-image" alt="Pratik Dahal" />
+        <div class="hero-image-container">
+          <div class="hero-image-wrapper">
+            <img src="kk.png" class="hero-image" alt="Pratik Dahal" />
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="projects">
-      <div class="title">
-        <h2>My Projects</h2>
-        <p class="sub-title">
-          Showcasing my development journey through various projects
-        </p>
-      </div>
-      <div class="project-list">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="bb.jpg" alt="Banking System" />
-          </div>
-          <div class="card-details">
-            <h4 class="card-title">Banking System</h4>
-            <p class="card-description">
-              A comprehensive banking management system built with all the concepts of "C Programming Language" as a Final Project of 1st Semester.
-            </p>
-            <a href="https://github.com/gtm-safal/Banking_system" target="_blank" class="project-link">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>My Projects</h2>
+          <p class="section-subtitle">
+            Showcasing my development journey through various projects
+          </p>
         </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="porto.jpg" alt="Portfolio Website" />
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="bb.jpg" alt="Banking System" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/gtm-safal/Banking_system" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Banking System</h3>
+              <p class="project-description">
+                A comprehensive banking management system built with all the concepts of "C Programming Language" as a Final Project of 1st Semester.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">C Programming</span>
+                <span class="tech-tag">Data Structures</span>
+              </div>
+            </div>
           </div>
-          <div class="card-details">
-            <h4 class="card-title">Portfolio Website</h4>
-            <p class="card-description">
-              My own portfolio website built with HTML, CSS and JavaScript
-            </p>
-            <a href="#" class="project-link">
-              <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
+          
+          <div class="project-card">
+            <div class="project-image">
+              <img src="porto.jpg" alt="Portfolio Website" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-description">
+                My own portfolio website built with HTML, CSS and JavaScript
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     
     <section id="skills">
-      <div class="title">
-        <h2>My Skills</h2>
-        <p class="sub-title">
-          Technologies and tools I work with
-        </p>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-          </div>
-          <h4>HTML5</h4>
-          <p>Markup Language</p>
+      <div class="container">
+        <div class="section-header">
+          <h2>My Skills</h2>
+          <p class="section-subtitle">
+            Technologies and tools I work with
+          </p>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            </div>
+            <h4>HTML5</h4>
+            <p>Markup Language</p>
           </div>
-          <h4>CSS3</h4>
-          <p>Styling & Layout</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            </div>
+            <h4>CSS3</h4>
+            <p>Styling & Layout</p>
           </div>
-          <h4>JavaScript</h4>
-          <p>Programming Language</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            </div>
+            <h4>JavaScript</h4>
+            <p>Programming Language</p>
           </div>
-          <h4>Python</h4>
-          <p>Programming Language</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            </div>
+            <h4>Python</h4>
+            <p>Programming Language</p>
           </div>
-          <h4>C</h4>
-          <p>Programming Language</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+            </div>
+            <h4>C</h4>
+            <p>Programming Language</p>
           </div>
-          <h4>C++</h4>
-          <p>Programming Language</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+            </div>
+            <h4>C++</h4>
+            <p>Programming Language</p>
           </div>
-          <h4>GitHub</h4>
-          <p>Code Repository</p>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            </div>
+            <h4>GitHub</h4>
+            <p>Code Repository</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="about">
-      <div class="about-content">
-        <div class="about-text">
-          <h3>About Myself!</h3>
-          <p>
-            Hi! I'm Pratik Dahal, currently pursuing my Bachelor's in Computer Engineering at IOE Purwanchal Campus, Dharan. I completed my Grade 12 with an excellent GPA of 3.71, which opened doors to this exciting field of technology.
-          </p>
-          <p>
-            I'm well-skilled in HTML, CSS, C, and C++, with a solid foundation in Python and JavaScript that I'm continuously developing. I'm well known about the basics of Git and GitHub for version control and collaboration. My passion lies in front-end development, where I enjoy creating clean, responsive web interfaces that bring ideas to life.
-          </p>
-          <p>
-            This portfolio showcases my journey, projects, and dedication as I am starting to navigate through this exciting world of tech, code and innovation.
-          </p>
-          <div class="social-wrapper">
-            <div class="social-button">
-              <a href="https://www.facebook.com/prateek.dahal.98" target="_blank">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Myself!</h2>
+            <p>
+              Hi! I'm Pratik Dahal, currently pursuing my Bachelor's in Computer Engineering at IOE Purwanchal Campus, Dharan. I completed my Grade 12 with an excellent GPA of 3.71, which opened doors to this exciting field of technology.
+            </p>
+            <p>
+              I'm well-skilled in HTML, CSS, C, and C++, with a solid foundation in Python and JavaScript that I'm continuously developing. I'm well known about the basics of Git and GitHub for version control and collaboration. My passion lies in front-end development, where I enjoy creating clean, responsive web interfaces that bring ideas to life.
+            </p>
+            <p>
+              This portfolio showcases my journey, projects, and dedication as I am starting to navigate through this exciting world of tech, code and innovation.
+            </p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/prateek.dahal.98" target="_blank" class="social-link">
                 <i class="fab fa-facebook-f"></i>
               </a>
-            </div>
-            <div class="social-button">
-              <a href="https://www.instagram.com/pratiikd15/" target="_blank">
+              <a href="https://www.instagram.com/pratiikd15/" target="_blank" class="social-link">
                 <i class="fab fa-instagram"></i>
               </a>
-            </div>
-            <div class="social-button">
-              <a href="https://www.linkedin.com/in/pratik-dahal-71635a334/" target="_blank">
+              <a href="https://www.linkedin.com/in/pratik-dahal-71635a334/" target="_blank" class="social-link">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-            </div>
-            <div class="social-button">
-              <a href="https://github.com/pratikkdahal" target="_blank">
+              <a href="https://github.com/pratikkdahal" target="_blank" class="social-link">
                 <i class="fab fa-github"></i>
               </a>
-            </div>
-            <div class="social-button">
-              <a href="https://discord.com/channels/@me" target="_blank">
+              <a href="https://discord.com/channels/@me" target="_blank" class="social-link">
                 <i class="fab fa-discord"></i>
               </a>
             </div>
           </div>
-        </div>
-        <div class="about-image">
-          <img src="ll.png" alt="Pratik Dahal" class="about-img" />
+          <div class="about-image">
+            <div class="about-image-wrapper">
+              <img src="ll.png" alt="Pratik Dahal" class="about-img" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="title">
-        <h2>Contact Me</h2>
-        <p class="sub-title">
-          Let's connect and work together!
-        </p>
-      </div>
-      
-      <div class="contact-container">
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <p>pratikd354@gmail.com</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <div>
-              <h4>Phone</h4>
-              <p>+977 98XXXXXXXX</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <h4>Location</h4>
-              <p>Dharan, Nepal</p>
-            </div>
-          </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Me</h2>
+          <p class="section-subtitle">
+            Let's connect and work together!
+          </p>
         </div>
-
-        <form action="https://formsubmit.co/pratikd354@gmail.com" method="POST" class="contact-form">
-          <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://pratikkdahal.github.io/portfolio/thank-you.html">
-          
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>pratikd354@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p>+977 98XXXXXXXX</p>
+              </div>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Dharan, Nepal</p>
+              </div>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
-          </div>
+          <form action="https://formsubmit.co/pratikd354@gmail.com" method="POST" class="contact-form">
+            <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://pratikkdahal.github.io/portfolio/thank-you.html">
+            <input type="hidden" name="_template" value="table">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+              </div>
+            </div>
 
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" name="subject" id="subject" placeholder="Enter the subject" required>
-          </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" name="subject" id="subject" placeholder="Enter the subject" required>
+            </div>
 
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="6" placeholder="Enter your message" required></textarea>
-          </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea name="message" id="message" rows="6" placeholder="Enter your message" required></textarea>
+            </div>
 
-          <button type="submit" class="btn-primary">
-            <i class="fas fa-paper-plane"></i>
-            Send Message
-          </button>
-        </form>
+            <button type="submit" class="btn-primary btn-submit">
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
-    <footer id="footer">
-      <p>Made with ❤️ by PratikSoar © 2024</p>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 PratikSoar. Made with <i class="fas fa-heart"></i> by Pratik Dahal</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
