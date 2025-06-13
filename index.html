@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Template</title>
+    <title>Pratik Dahal - Portfolio</title>
     <link rel="stylesheet" href="styleee.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   </head>
   <body>
     <nav>
@@ -19,12 +18,13 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger">
-        <img src="./icons/hamburger.svg" alt="" />
+        <i class="fas fa-bars"></i>
       </div>
     </nav>
+    
     <div class="sidebar">
       <div class="sidebar-menu">
-        <img src="./icons/close.svg" alt="" width="30" class="close-btn" />
+        <i class="fas fa-times close-btn"></i>
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -34,8 +34,9 @@
         </ul>
       </div>
     </div>
+
     <section id="hero">
-      <div class="left">
+      <div class="hero-content">
         <div class="hero-text">
           <h2>I'm Pratik Dahal!</h2>
           <span>Undergraduate Computer Engineer</span>
@@ -45,8 +46,11 @@
         </p>
         <button class="btn-primary">Download CV</button>
       </div>
-      <img src="kk.png" class="hero-image" alt="" width="500"/>
+      <div class="hero-image-container">
+        <img src="kk.png" class="hero-image" alt="Pratik Dahal" />
+      </div>
     </section>
+
     <section id="projects">
       <div class="title">
         <h2>My Projects</h2>
@@ -57,77 +61,33 @@
       <div class="project-list">
         <div class="project-card">
           <div class="project-image">
-            <img src="bb.jpg" alt="Banking System" width="300" />
+            <img src="bb.jpg" alt="Banking System" />
           </div>
           <div class="card-details">
             <h4 class="card-title">Banking System</h4>
             <p class="card-description">
               A comprehensive banking management system built with all the concepts of "C Programming Language" as a Final Project of 1st Semester.
             </p>
-            <a href="https://github.com/gtm-safal/Banking_system" target="_blank">View on GitHub</a>
+            <a href="https://github.com/gtm-safal/Banking_system" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
           </div>
         </div>
         <div class="project-card">
           <div class="project-image">
-            <img src="porto.jpg" alt="" width="300" />
+            <img src="porto.jpg" alt="Portfolio Website" />
           </div>
           <div class="card-details">
             <h4 class="card-title">Portfolio Website</h4>
             <p class="card-description">
-                 My own portfolio website built with HTML,CSS and JavaScript
+              My own portfolio website built with HTML, CSS and JavaScript
             </p>
-            <a href="#">Live Demo</a>
+            <a href="#" class="project-link">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
           </div>
         </div>
-        <!-- <div class="project-card">
-          <div class="project-image">
-            <img src="jj.jpg" alt="" width="300" />
-          </div>
-          <div class="card-details">
-            <h4 class="card-title">Project Name</h4>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <a href="#">Live Demo</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="jj.jpg" alt="" width="300" />
-          </div>
-          <div class="card-details">
-            <h4 class="card-title">Project Name</h4>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <a href="#">Live Demo</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="pratik.jpg" alt="" width="300" />
-          </div>
-          <div class="card-details">
-            <h4 class="card-title">Project Name</h4>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <a href="#">Live Demo</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="pp.jpg" alt="" width="300" />
-          </div>
-          <div class="card-details">
-            <h4 class="card-title">Project Name</h4>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <a href="#">Live Demo</a>
-          </div>
-        </div>
-      </div> -->
+      </div>
     </section>
     
     <section id="skills">
@@ -180,13 +140,6 @@
           <h4>C++</h4>
           <p>Programming Language</p>
         </div>
-        <!-- <div class="skill-card">
-          <div class="skill-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-          </div>
-          <h4>Git</h4>
-          <p>Version Control</p>
-        </div> -->
         <div class="skill-card">
           <div class="skill-icon">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
@@ -198,97 +151,122 @@
     </section>
 
     <section id="about">
-      <div class="details">
-        <h3>About Myself!</h3>
-        <p>
-          Hi! I'm Pratik Dahal, currently pursuing my Bachelor's in Computer Engineering at IOE Purwanchal Campus, Dharan. I completed my Grade 12 with an excellent GPA of 3.71, which opened doors to this exciting field of technology.
-        </p>
-        <p>
-          I'm well-skilled in HTML, CSS, C, and C++, with a solid foundation in Python and JavaScript that I'm continuously developing. I'm well known about the basics of Git and GitHub for version control and collaboration. My passion lies in front-end development, where I enjoy creating clean, responsive web interfaces that bring ideas to life.
-        </p>
-        <p>
-          This portfolio showcases my journey, projects, and dedication as I am starting to navigate through this exciting world of tech, code and innovation. 
-        </p>
-        <div class="wrapper">
-           <div class="button">
-              <div class="icon">
-                <a href="https://www.facebook.com/prateek.dahal.98" target="blank"> <i class="fab fa-facebook-f"></i></a>
-                
-              </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>About Myself!</h3>
+          <p>
+            Hi! I'm Pratik Dahal, currently pursuing my Bachelor's in Computer Engineering at IOE Purwanchal Campus, Dharan. I completed my Grade 12 with an excellent GPA of 3.71, which opened doors to this exciting field of technology.
+          </p>
+          <p>
+            I'm well-skilled in HTML, CSS, C, and C++, with a solid foundation in Python and JavaScript that I'm continuously developing. I'm well known about the basics of Git and GitHub for version control and collaboration. My passion lies in front-end development, where I enjoy creating clean, responsive web interfaces that bring ideas to life.
+          </p>
+          <p>
+            This portfolio showcases my journey, projects, and dedication as I am starting to navigate through this exciting world of tech, code and innovation.
+          </p>
+          <div class="social-wrapper">
+            <div class="social-button">
+              <a href="https://www.facebook.com/prateek.dahal.98" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
             </div>
-           <div class="button">
-              <div class="icon"><a href="https://www.instagram.com/pratiikd15/" target="blank"><i class="fab fa-instagram"></i></a>
-                
-              </div>
+            <div class="social-button">
+              <a href="https://www.instagram.com/pratiikd15/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
-           <div class="button">
-              <div class="icon"><a href="https://www.linkedin.com/in/pratik-dahal-71635a334/" target="blank"><i class="fab fa-linkedin-in"></i></a>
-              </div>
+            <div class="social-button">
+              <a href="https://www.linkedin.com/in/pratik-dahal-71635a334/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
-
-           <div class="button">
-              <div class="icon"><a href="https://github.com/pratikkdahal" target="blank"><i class="fab fa-github"></i></a>
-                
-              </div>
+            <div class="social-button">
+              <a href="https://github.com/pratikkdahal" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
             </div>
-           <div class="button">
-              <div class="icon"><a href="https://discord.com/channels/@me" target="blank"><i class="fab fa-discord"></i></a>
-              
-              </div>
+            <div class="social-button">
+              <a href="https://discord.com/channels/@me" target="_blank">
+                <i class="fab fa-discord"></i>
+              </a>
             </div>
-      </div>
-      <div class="image.container">
-        <img src="ll.png" alt="Your Photo" class="about-img" />
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="ll.png" alt="Pratik Dahal" class="about-img" />
+        </div>
       </div>
     </section>
+
     <section id="contact">
       <div class="title">
         <h2>Contact Me</h2>
         <p class="sub-title">
-          Let's connect !
+          Let's connect and work together!
         </p>
       </div>
-      <!-- <form action="https://formspree.io/f/yourFormID" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form> -->
       
-
-      <form action="">
-        <div class="inputs">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-          />
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>pratikd354@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+977 98XXXXXXXX</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Dharan, Nepal</p>
+            </div>
+          </div>
         </div>
 
-        <div class="inputs">
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-          />
-        </div>
+        <form action="https://formsubmit.co/pratikd354@gmail.com" method="POST" class="contact-form">
+          <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://pratikkdahal.github.io/portfolio/thank-you.html">
+          
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+          </div>
 
-        <div class="inputs">
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" rows="5" placeholder="Enter your message"></textarea>
-        </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+          </div>
 
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-      <form action="https://formsubmit.co/pratikd354@gmail.com" method="POST">
-       <!-- form fields here -->
-      </form>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" placeholder="Enter the subject" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="6" placeholder="Enter your message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
     </section>
-    <section id="footer">Made with ❤️ by PratikSoar</section>
+
+    <footer id="footer">
+      <p>Made with ❤️ by PratikSoar © 2024</p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
